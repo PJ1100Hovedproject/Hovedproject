@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Easy HTML</title>
+	<meta charset="UTF-8">
+
+	<style>
+		body{
+			margin: 0;
+
+		}
+		#animasjonsWrap{
+			height: 600px;
+			width: 960px;
+			margin: auto;
+			background-color: #323232;
+			position: relative;
+
+		}
+		#box{
+			width: 10px;
+			height: 10px;
+			background-color: #A0A0A0;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			transition: all 6s linear 0s;
+			-webkit-animation: upAndDown 4s linear infinite alternate;
+
+
+		}
+		#green:target ~ #box {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #00FF00;
+			left: 100px;
+			top: 100px;
+		}
+		#blue:target ~ #box{
+			width: 400px;
+			height: 200px;
+			background-color: #00F;
+			left: 100px;
+			top: 100px;
+		}
+		
+		@-webkit-keyframes upAndDown{
+			from{
+				top: 100px;
+			}
+			to{
+				top: 300px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="animasjonsWrap">
+		<a id="green" href="#green">Grønn og rund</a>
+		<a id="blue" href="#blue">Blå, firkantet og lang</a>
+		<a id="default" href="#default">Default</a>
+
+		<div id="box"></div>
+	</div>
+</body>
+
+</html>
