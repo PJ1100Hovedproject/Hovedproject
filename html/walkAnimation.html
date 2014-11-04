@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<hea>
+	<title>Walk Animation</title>
+	<meta charset="UTF-8">
+	<!--Brukker ikke eksternt stilark for denne demo/modellen-->
+	<style>
+		body{
+			margin: 0px;
+			background-color: black;
+		}
+		h1{
+			color: #a2a2a2;
+			text-align: center;
+		}
+		#karakter{
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			left: -200px;
+			-webkit-animation: walk 5s linear 0s infinite alternate;
+		}
+
+
+		@-webkit-keyframes walk {
+			0% {
+				left: -300px;
+				transform: rotate(25deg);
+			}
+			10% {
+				left: -150px;
+				transform: rotate(-25deg);
+			}
+			20% {
+				left: 0px;
+				transform: rotate(25deg);
+			}
+			30% {
+				left: 150px;
+				transform: rotate(-25deg);
+			}
+			40% {
+				left: 300px;
+				transform: rotate(25deg);
+			}
+			50% {
+				left: 450px;
+				transform: rotate(-25deg);
+			}
+			60% {
+				left: 600px;
+				transform: rotate(25deg);
+			}
+			70% {
+				left: 750px;
+				transform: rotate(-25deg);
+			}
+			80% {
+				left: 900px;
+				transform: rotate(25deg);
+			}
+			90% {
+				left: 1050px;
+				transform: rotate(-25deg);
+			}
+			100% {
+				left: 1200px;
+				transform: rotate(25deg);
+			}
+
+		}
+		img{
+			width: 300px;
+			height: 400px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Walk Animation</h1>
+
+	<div id="karakter">
+		<img src="bilder/kenny.png">
+	</div>
+
+</body>
+
+</html>
