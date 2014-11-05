@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<style>
+#setning{
+	-moz-animation:setning 5s;
+	-moz-animation-fill-mode: forwards; 
+	position:fixed;
+	top: 50%;
+	left: 400px;
+}
+#N{
+	-moz-animation:Nav 5s;
+	-moz-animation-fill-mode: forwards; 
+	position:absolute;
+	top: 50%;
+	left: 400px;
+}
+#a{
+	-moz-animation:Nav2 5s;
+	-moz-animation-fill-mode: forwards;
+	position:absolute;
+	top: 50%;
+	left:520px;
+}
+#v{
+	-moz-animation:Nav3 5s;
+	-moz-animation-fill-mode: forwards;
+	position:absolute;
+	top: 50%;
+	left:610px;
+}
+@-moz-keyframes Nav{
+	0%{
+		top:50%;
+		left:400px;
+	}
+	90%{
+		top:20%;
+		left:500px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:20%;
+		left:500px;
+		font-weight: bold;
+		font-size:x-large;
+	}
+	
+}
+@-moz-keyframes Nav2{
+	0%{
+		top:50%;
+		left:520px;
+	}
+	90%{
+		top:20%;
+		left:520px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:20%;
+		left:520px;
+		font-weight: bold;
+		font-size:x-large;
+	}
+	
+}
+@-moz-keyframes Nav3{
+	0%{
+		top:50%;
+		left:610px;
+	}
+	90%{
+		top:20%;
+		left:535px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:20%;
+		left:535px;
+		font-weight: bold;
+		font-size:x-large;
+	}
+	
+}
+@-moz-keyframes setning{
+	50%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+
+
+}
+</style>
+</head>
+
+<body>
+<p id="setning">Noe på n, annet på a og videre på v<p>
+<p id="N">N</p>
+<p id="a">a</p>
+<p id="v">v</p>
+</body>
+</html>
