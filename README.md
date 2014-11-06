@@ -9,3 +9,5 @@ Plan B: http://goo.gl/serXg7
 Plan C: http://goo.gl/NtGcRE
 
 Plan D: http://goo.gl/pCHZns
+
+06.11.14 14:20 la til Html som skal være lik Plan A.
