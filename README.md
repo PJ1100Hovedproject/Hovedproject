@@ -11,6 +11,7 @@ Plan C: http://goo.gl/NtGcRE
 Plan D: http://goo.gl/pCHZns
 
 Handlingsplan Word: http://goo.gl/oScFq7
+
 Handlingsplan Excel: http://goo.gl/HnBieY
 
 06.11.14 14:20 la til Html som skal være lik Plan A.
