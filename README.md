@@ -2,6 +2,8 @@ Hovedproject
 ============
 Anbefaler og laste ned github desktop, for windows eller mac det gjør det mye lettere å legge til og endre på filer
 
+Dialog prototype: http://goo.gl/Dd3PSt Bare å redigere og komme med forslag.
+
 Plan A:  http://goo.gl/kNg8H9
 
 Plan B: http://goo.gl/serXg7
