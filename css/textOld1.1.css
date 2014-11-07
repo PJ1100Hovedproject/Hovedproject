@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.animasjonsWrap {
+	width: 960px;
+	height: 600px;
+	background-color: #2a2a2a;
+	margin: auto;
+	overflow: visible;
+}
+body {
+	background-color: #000;
+	margin: 0px;
+}
+.animasjonsWrap * {
+	position: relative;
+}
+.button {
+	width: 300px;
+	height: 40px;
+	background-color: #000;
+	top: 560px;
+	margin: auto;
+	position: relative;
+}
+.button:hover{
+	background-color: #000;
+	color: #F00 
+}
+#button2 {
+	margin: auto;
+	top: 480px;
+}
+div {
+	font-family: Georgia, Arial, Verdana;
+	text-align: center;
+	position: relative;
+	font-size: 1.4em;
+	background-color: #a2a2a2;
+}
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+a:visited {
+	color: #fff;
+}
+h1 {
+	position: relative;
+	text-align: center;
+	font-size: 3em;
+	margin: 0px;
+	font-family: Georgia, Arial, Verdana;
+}
+.textFont:hover {
+	background-color: #bbb;
+}
+.textFont {
+	font-family: impact;
+	text-align: center;
+	position: relative;
+	background-color: #a2a2a2;
+}
+#creditButton {
+	position: relative;
+	width: 200px;
+	height: 40px;
+	top: 403px;
+	left: 760px;
+	font-size: 1.4em;
+}
+#gameover {
+	height: 100px;
+	width: 500px;
+	background-color: #bbb;
+	font-size: 3em;
+	margin: auto;
+	top: 200px;
+	position: relative;
+}
+#startButton {
+	font-size: 3em;
+	width: 400px;
+	height: 80px;
+	margin: auto;
+	background-color: yellow;
+	-webkit-animation: color 5s linear infinite alternate;
+	-webkit-transition-property: width;
+        -webkit-transition-duration: 1s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+ 
+}
+@-webkit-keyframes color {
+	0% {background-color: yellow;}
+	33% {background-color: red;}
+	66%{background-color: green;}
+	100%{background-color: blue;}
+}
+#startButton:hover {
+	width: 600px;
+}
+#hawaii{
+	background-image: url("../bilder/bakgrunner/hawaii.jpg");
+}
+#politi {
+	background-image: url("../bilder/bakgrunner/politiBakgrunn.png");
+}
+#nav {
+	background-image: url("../bilder/bakgrunner/navBakgrunn.png");
+}
