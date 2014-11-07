@@ -17,7 +17,7 @@ body {
 .button {
 	width: 300px;
 	height: 40px;
-	background-color: #fff;
+	background-color: #000;
 	top: 560px;
 	margin: auto;
 	position: relative;
@@ -38,11 +38,11 @@ div {
 	background-color: #a2a2a2;
 }
 a:link {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 a:visited {
-	color: #000;
+	color: #fff;
 }
 h1 {
 	position: relative;
@@ -52,7 +52,7 @@ h1 {
 	font-family: Georgia, Arial, Verdana;
 }
 .textFont:hover {
-			background-color: #bbb;
+	background-color: #bbb;
 }
 .textFont {
 	font-family: impact;
@@ -64,7 +64,7 @@ h1 {
 	position: relative;
 	width: 200px;
 	height: 40px;
-    top: 403px;
+	top: 403px;
 	left: 760px;
 	font-size: 1.4em;
 }
@@ -85,9 +85,9 @@ h1 {
 	background-color: yellow;
 	-webkit-animation: color 5s linear infinite alternate;
 	-webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 0s;
+        -webkit-transition-duration: 1s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
  
 }
 @-webkit-keyframes color {
