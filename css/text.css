@@ -1,163 +1,270 @@
 @charset "UTF-8";
 
-.animasjonsWrap {
+.animasjonsWrap { /*aniwrap 960*600 make sure overflow hidden, i like to have it visible while developing*/
 	width: 960px;
 	height: 600px;
 	background-color: #2a2a2a;
 	margin: auto;
 	overflow: hidden;
 }
-body {
+body { /* margin remove and background color*/
 	background-color: #000;
 	margin: 0px;
 }
-.animasjonsWrap * {
-	position: relative;
+.animasjonsWrap * { /*animasjons wrap alle barne elementer*/
+	position: absolute;
 	display: inline-block;
 }
-.button {
+.button { /*buttons som sørger for at man kommer seg videre*/
 	width: 300px;
 	height: 40px;
-	background-color: #fff;
+	background-color: #aaa;
 	top: 600px;
-	position: relative;
-	-webkit-animation: showButton .5s linear 5s 1 forwards;
+	left: -125px;
+	-webkit-animation: showButton .5s linear 10s 1 forwards;
 }
 @-webkit-keyframes showButton{
 	from{top: 600px;}
 	to{top: 560px;}
 }
-.button:hover{
+.button:hover{ /*genrell button hover*/
 	background-color: #000;
 	color: #F00 
 }
-#button2 {
+#button2 { /*buttton 2 når det er 2 buttons på skjermen*/
 	margin: auto;
 	top: 600px;
 	left: -147px;
-	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
 }
 @-webkit-keyframes showButtonTwo{
 	from{top: 600px;}
 	to{top: 520px;}
 }
-#option1 {
-	left: 159px;
+#option1 { /*POSISION for options bar*/
+	left: -147px;
 }
-#gjennstand1 {
+#posNav {
+	left: -200px;
+	top: 600px;
+	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
+}
+#posPoliti {
+	left: -200px;
+}
+#gjennstand1 { /*gennstand på teknisk museum*/
 	width: 100px;
 	height: 100px;
 	background-color: #af4303;
 	left: 300px;
+	position: relative;
 	top: 230px;
 }
-#gjennstand2{
+#gjennstand2{ /*gennstand på teknisk museum*/
 	height: 200px;
+	position: relative;
 	width: 150px;
 	background-color: #eaff33;
 	top: 200px;
-	left: 500px;
+	left: -400px;
 }
-#gjennstand3 {
+#gjennstand3 { /*gennstand på teknisk museum*/
 	height: 4px;
 	width: 4px;
+	position: relative;
 	background-color: red;
 	left: 40px;
 	top: 40px;
+	cursor: crosshair;
 }
-.alternativ {
+.alternativ { /*Svar alternativ boks formatering slik at de set like ut og DRY*/
 	height: 50px;
 	width: 500px;
 	margin: auto;
 	top: 440px;
+	left: -200px;
+	background-color: #aaa;
 	border: 2px solid black;
 }
-.alternativ:hover {
+.alternativ:hover { /*hover effect på svar alternativet*/
 	background-color: #0F0;
 }
-div {
+#alternativ1 { /*posisjon for svar alternativer*/
+	top: 548px;
+}
+#alternativ2 { /*posisjon for svar alternativer*/
+	top: 496px;
+}
+#alternativ3 { /*posisjon for svar alternativer*/
+	top: 444px;
+}
+.question { /*der spørsmålet til listogs kontor kommer opp*/
+	height: 80px;
+	width: 960px;
+	background-color: #fff;
+	font-size: 1em;
+	color: black;
+	left: -480px;
+	position: absolute;
+}
+div { /*sørger for at alle diver har samme font og er sentrert med en passe størrelse*/
 	font-family: Georgia, Arial, Verdana;
 	text-align: center;
-	position: relative;
 	font-size: 1.4em;
-	background-color: #a2a2a2;
 }
-a:link {
+a:link { /*link formatering*/
 	color: #000;
 	text-decoration: none;
 }
-a:visited {
+a:visited { /*link formatering*/
 	color: #000;
 }
-h1 {
-	position: relative;
+h1 { /*generel h1 formatering*/
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 	margin: 0px;
 	font-family: Georgia, Arial, Verdana;
 }
-#spillTittel {
+#spillTittel { /*Starts tittelen*/
+	background-color: red;
+	width: 960px;
+	height: 150px;
+	left: 100px;
+	top: 200px;
 	-webkit-animation: slideIn 5s ease 1 forwards;
 }
 @-webkit-keyframes slideIn {
-	from {left: -900px;}
-	to{left: 0px;}
+	from {left: -1700px; color: #fff;}
+	to{left: 0px; color: #57B816;}
 }
-.textFont:hover {
-	background-color: #bbb;
-}
-.textFont {
-	font-family: impact;
-	text-align: center;
+#titleText { /*Tittel tekst med slide in animasjon brukes på flere titteler*/
+	width: 960px;
+	color: #fff;
+	left: -900px;
+	font-size: 4em;
 	position: relative;
-	background-color: #a2a2a2;
+	-webkit-animation: slideIn 5s ease 1 forwards;
+	-webkit-transition: color .2s linear;
 }
-#creditButton {
+#titleText:hover {
+	color: #fff;
+}
+#creditHeader {
+	 background-color: none;
+}
+#creditButton { /*credits button fra startskjermen*/
 	position: relative;
 	width: 200px;
 	height: 40px;
-    top: 494px;
-	left: 177px;
+    top: 600px;
+	left: 760px;
+	background-color: #af3333;
 	font-size: 1.4em;
-	display: inline-block;
 	-webkit-animation: popUp 0.3s linear 5s 1 forwards;
+	-webkit-transition: all .1s linear;
+}
+#creditButton:hover {
+	border-top: 3px solid #ddd;
+	border-left: 3px solid #ddd;
+}
+.credits {
+	width: 600px;
+	height: 100px;
+	position: relative;
+	left: -900px;
+	color: #fff;
+}
+#edvin {
+	-webkit-animation: scrolling 10s linear infinite;
+}
+#erlend {
+	top: -60px;
+	-webkit-animation: scrolling 10s linear 1s infinite;
+}
+#jon {
+	top: -120px;
+	-webkit-animation: scrolling 10s linear 2s infinite;
+}
+#markus {
+	top: -180px;
+	-webkit-animation: scrolling 10s linear 3s infinite;
+}
+#sara {
+	top: -240px;
+	-webkit-animation: scrolling 10s linear 4s infinite;
+}
+#sigrund {
+	top: -300px;
+	-webkit-animation: scrolling 10s linear 5s infinite;
+}
+#stian {
+	top: -360px;
+	-webkit-animation: scrolling 10s linear 6s infinite;
+}
+@-webkit-keyframes scrolling {
+	0% {left: -700px; color: #000;}
+	10% {left: -100px; color: #baffad;}
+	90%{left: 100px; color: #fff; opacity: 1;} 
+	100% {left: 700px; opacity: 0;}
 }
 @-webkit-keyframes popUp{
-	0%{top: 494px;}
-	50%{top: 400px;}
-	100%{top: 454px;}
+	0%{top: 600px;}
+	50%{top: 540px;}
+	100%{top: 560px;}
 }
-#gameover {
+#gameover { /*game over knapp*/
 	height: 100px;
 	width: 500px;
 	background-color: #bbb;
 	font-size: 3em;
 	margin: auto;
 	top: 200px;
+	left: -230px;
 	position: relative;
 }
-#startButton {
+#gameover:hover { /*Game over knapp hover effekter*/
+	-webkit-animation: pulse .5s linear infinite alternate;
+}
+@-webkit-keyframes pulse {
+	0% {transform: scale(1);}
+	100% {transform: scale(1.1);}
+}
+#startButton { /*Start Game knappen*/
 	font-size: 3em;
 	width: 400px;
 	height: 80px;
 	margin: auto;
-	display: inline-block;
 	background-color: yellow;
 	-webkit-animation: moveIn 5s ease 1 forwards;
-	-webkit-transition-property: background-color;
-    -webkit-transition-duration: 1s;
+	-webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
     -webkit-transition-timing-function: linear;
     -webkit-transition-delay: 0s;
  
 }
-@-webkit-keyframes moveIn {
+@-webkit-keyframes moveIn { /*StartButton Anmasjon startcreen.html*/
 	from{left: -700px; top: -500px;}
-	to{left: 100px; top: 200px;}
+	to{left: 300px; top: 300px;}
 	}
-#startButton:hover {
+.animasjonsWrap:hover a #startButton { /*Når man hovrer over blir den litt større og får en annen farge*/
 	background-color: #0f0;
+	transform: scale(2) rotate(1080deg);
+	border-radius: 20%;
+}
+#rip{ /*RIP bilde som hører med til dead.html bakgrunnen*/
+	top: -20px;
+	left: 500px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	-webkit-animation: leftSlide 5s ease 15s 1 forwards;
+}
+@-webkit-keyframes leftSlide {
+	from {left: 800px;}
+	to {left: 40px;}
 }
 
+/*Bakgrunner går her.*/
 #hawaii{
 	background-image: url("../bilder/bakgrunner/hawaii.jpg");
 }
@@ -166,4 +273,271 @@ h1 {
 }
 #nav {
 	background-image: url("../bilder/bakgrunner/navBakgrunn.png");
+}
+#kontor {
+	background-image: url("../bilder/bakgrunner/hawaii.jpg");
+}
+#oslofjord {
+	background-image: url("../bilder/Bakgrunner/oslofjord.jpg");
+}
+#stortinget  {
+	background-image: url("../bilder/Bakgrunner/stortinget.jpg");
+	cursor: crosshair;
+}
+#crosshair {
+	cursor: crosshair;
+}
+#tekstBoks {
+	background-color: red;
+	left: -200px;
+}
+.bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
+	position: relative;
+	width: 900px;
+	height: 200px;
+	margin: 0px auto;
+	border: #3f3 1px solid;
+	overflow: hidden;
+}
+div#banner{
+	/*Posision for banner går her, treger ikke posisjonere pga den passer der den er*/
+}
+div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og animert*/ 
+	position: relative;
+	background-image: url(../bilder/objects/matrix.jpg);
+	width: 1320px;
+	height: 200px;
+	-webkit-animation: backdropRoll linear 12s infinite;
+}
+#bannerContent { /*Dette er det som skal stå inne i banneret aka teksten som sier Back To Start etc*/
+	position: relative;
+	width: 96%;
+	height: 160px;
+	margin: 20px auto;
+	top: -200px;
+	color: #f00;
+	font-size: 3.2em;
+	-webkit-animation: textColor .5s linear infinite;
+}
+div#bannerZombie{ /*Posisijonene til Zombie banneret*/ 
+	left: -350px;
+	top: -500px;
+	-webkit-animation: topToBottom 5s ease 10s 1 forwards;
+}
+div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir puttet in og animert til Zombie banneret*/ 
+	background-image: url(../bilder/objects/zombie.jpg);
+	position: relative;
+	width: 1320px;
+	height: 200px;
+	-webkit-animation: backdropRoll linear 12s infinite;
+}
+@-webkit-keyframes topToBottom { /*animasjon for zombie banneret*/
+	from {top: -800px}
+	to {top: 200px; left: -350px;}
+}
+
+@-webkit-keyframes textColor { /*Animasjon for blinkende tekst*/
+	0% {color: green;}
+	5% {color: white}
+	6{color: green;}
+}
+@-webkit-keyframes backdropRoll { /*Animasjon for rulldende repeating background img*/ 
+	from {right: 0px;}
+	to {right: 225px;}
+}
+#tilbakeKnapp { /*Posision fix for Tilbake Knapp*/
+	left: -600px;	
+}
+#tilbakeKnappCredits { /*Posision fix for Tilbake Knapp Credits*/
+	left: 360px;
+}
+
+p{  /*generell format for alle p tekster*/
+	color: white;
+	position: relative;
+	height: 100px;
+	top: 10px;
+}
+.textDialog { /*dialog boksen under animasjons wrapen*/
+	background-color: black;
+	position: relative;
+	top: -25px;
+	width: 960px;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+}
+.snakkeBobble { /*Snakkebobble for dialogene*/
+	background-color: white;
+	height: 150px;
+	width: 400px;
+	color: black;
+	border-radius: 25%;
+	opacity: 0;
+	margin: auto;
+	position: relative;
+	transform: scale(.5);
+	-webkit-animation: fadeIn 3s linear 5s 1 forwards;
+	-webkit-transition: all 2s ease;
+}
+#snakkeBobbleSene1 {
+	top: -700px;
+	left: 0px;
+}
+.animasjonsWrap:hover ~ #snakkeBobbleSene1{
+	transform: scale(1.2);
+}
+#snakkeBobbleDead {
+	left: -270px;
+	top: -660px;
+	color: black
+}
+.animasjonsWrap:hover ~ #snakkeBobbleDead{
+	transform: scale(1.2);
+}
+#snakkeBobbleFjord {
+	height: 100px;
+	top: -690px;
+}
+.animasjonsWrap:hover ~ #snakkeBobbleFjord{
+	transform: scale(1.2);
+}
+#snakkeBobbleKjemi {
+	height: 200px;
+	top: -700px;
+}
+.animasjonsWrap:hover ~ #snakkeBobbleKjemi{
+	transform: scale(1.2);
+}
+
+@-webkit-keyframes fadeIn {
+	from{opacity: 0;}
+	to {opacity: 1;}
+}
+div.snakkeBobble > p {
+	top: 20%;
+	color: black;
+}
+#nursePicture {
+	position: relative;
+	top: -582px;
+	left: 328px;
+	width: 300px;
+	opacity: 0;
+	-webkit-animation: nurseIn 5s ease 1 forwards;
+}
+@-webkit-keyframes nurseIn {
+	0%{left: 500px; opacity: 0;}
+	50% {opacity: 0;}
+	100% {left: 328px; opacity: 1;}
+}
+#heisenberg {
+	width: 200px;
+ 	top: 300px;
+ 	left: 228px;
+}
+#normarkitt {
+	height: 100px;
+	position: relative;
+ 	width: 400px;
+ 	cursor: crosshair;
+ 	background-color: red;
+ 	top: 300px;
+}
+
+
+
+/*NAV animasjon av Erlend, fixed by Edvin så den passer*/
+#setning{
+	-webkit-animation:setning 5s;
+	-webkit-animation-fill-mode: forwards; 
+}
+#n{
+	-webkit-animation:Nav 5s;
+	-webkit-animation-fill-mode: forwards; 
+	position:relative;
+	top: 600px;
+	left: 400px;
+}
+#a{
+	-webkit-animation:Nav2 5s;
+	-webkit-animation-fill-mode: forwards;
+	position:relative;
+	top: 50%;
+	left:520px;
+}
+#v{
+	-webkit-animation:Nav3 5s;
+	-webkit-animation-fill-mode: forwards;
+	position:relative;
+	top: 600px;
+	left:310px;
+}
+@-webkit-keyframes Nav{
+	0%{
+		top:600px;
+		left:-280px;
+	}
+	90%{
+		top: 0px;
+		left:-100px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:0px;
+		left:-100px;
+		color: red;
+		font-weight: bold;
+		font-size:3em;
+	}
+	
+}
+@-webkit-keyframes Nav2{
+	0%{
+		top:600px;
+		left:-160px;
+	}
+	90%{
+		top:0px;
+		left:-100px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:0px;
+		left:-100px;
+		color: red;
+		font-weight: bold;
+		font-size:3em;
+	}
+	
+}
+@-webkit-keyframes Nav3{
+	0%{
+		top:600px;
+		left:45px;
+	}
+	90%{
+		top:0px;
+		left:-100px;
+		font-weight:normal;
+		font-size:medium;
+	}
+	100%{
+		top:0px;
+		left: -100px;
+		font-weight: bold;
+		color: red;
+		font-size: 3em;
+	}
+	
+}
+@-webkit-keyframes setning{
+	75%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
 }

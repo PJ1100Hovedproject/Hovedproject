@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+.animasjonsWrap {
+	width: 960px;
+	height: 600px;
+	background-color: #2a2a2a;
+	margin: auto;
+	overflow: hidden;
+}
+body {
+	background-color: #000;
+	margin: 0px;
+}
+.animasjonsWrap * {
+	position: relative;
+	display: inline-block;
+}
+.button {
+	width: 300px;
+	height: 40px;
+	background-color: #fff;
+	top: 600px;
+	position: relative;
+	-webkit-animation: showButton .5s linear 5s 1 forwards;
+}
+@-webkit-keyframes showButton{
+	from{top: 600px;}
+	to{top: 560px;}
+}
+.button:hover{
+	background-color: #000;
+	color: #F00 
+}
+#button2 {
+	margin: auto;
+	top: 600px;
+	left: -147px;
+	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
+}
+@-webkit-keyframes showButtonTwo{
+	from{top: 600px;}
+	to{top: 520px;}
+}
+#option1 {
+	left: 159px;
+}
+#gjennstand1 {
+	width: 100px;
+	height: 100px;
+	background-color: #af4303;
+	left: 300px;
+	top: 230px;
+}
+#gjennstand2{
+	height: 200px;
+	width: 150px;
+	background-color: #eaff33;
+	top: 200px;
+	left: 500px;
+}
+#gjennstand3 {
+	height: 4px;
+	width: 4px;
+	background-color: red;
+	left: 40px;
+	top: 40px;
+}
+.alternativ {
+	height: 50px;
+	width: 500px;
+	margin: auto;
+	top: 440px;
+	border: 2px solid black;
+}
+.alternativ:hover {
+	background-color: #0F0;
+}
+div {
+	font-family: Georgia, Arial, Verdana;
+	text-align: center;
+	position: relative;
+	font-size: 1.4em;
+	background-color: #a2a2a2;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000;
+}
+h1 {
+	position: relative;
+	text-align: center;
+	font-size: 3em;
+	margin: 0px;
+	font-family: Georgia, Arial, Verdana;
+}
+#spillTittel {
+	-webkit-animation: slideIn 5s ease 1 forwards;
+}
+@-webkit-keyframes slideIn {
+	from {left: -900px;}
+	to{left: 0px;}
+}
+.textFont:hover {
+	background-color: #bbb;
+}
+.textFont {
+	font-family: impact;
+	text-align: center;
+	position: relative;
+	background-color: #a2a2a2;
+}
+#creditButton {
+	position: relative;
+	width: 200px;
+	height: 40px;
+    top: 494px;
+	left: 177px;
+	font-size: 1.4em;
+	display: inline-block;
+	-webkit-animation: popUp 0.3s linear 5s 1 forwards;
+}
+@-webkit-keyframes popUp{
+	0%{top: 494px;}
+	50%{top: 400px;}
+	100%{top: 454px;}
+}
+#gameover {
+	height: 100px;
+	width: 500px;
+	background-color: #bbb;
+	font-size: 3em;
+	margin: auto;
+	top: 200px;
+	position: relative;
+}
+#startButton {
+	font-size: 3em;
+	width: 400px;
+	height: 80px;
+	margin: auto;
+	display: inline-block;
+	background-color: yellow;
+	-webkit-animation: moveIn 5s ease 1 forwards;
+	-webkit-transition-property: background-color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+ 
+}
+@-webkit-keyframes moveIn {
+	from{left: -700px; top: -500px;}
+	to{left: 100px; top: 200px;}
+	}
+#startButton:hover {
+	background-color: #0f0;
+}
+
+#hawaii{
+	background-image: url("../bilder/bakgrunner/hawaii.jpg");
+}
+#politi {
+	background-image: url("../bilder/bakgrunner/politiBakgrunn.png");
+}
+#nav {
+	background-image: url("../bilder/bakgrunner/navBakgrunn.png");
+}
