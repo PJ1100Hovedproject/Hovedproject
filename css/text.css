@@ -21,7 +21,7 @@ body { /* margin remove and background color*/
 	background-color: #aaa;
 	top: 600px;
 	left: -125px;
-	-webkit-animation: showButton .5s linear 10s 1 forwards;
+	-webkit-animation: showButton .5s linear 5s 1 forwards;
 }
 @-webkit-keyframes showButton{
 	from{top: 600px;}
@@ -35,7 +35,7 @@ body { /* margin remove and background color*/
 	margin: auto;
 	top: 600px;
 	left: -147px;
-	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
 }
 @-webkit-keyframes showButtonTwo{
 	from{top: 600px;}
@@ -47,7 +47,7 @@ body { /* margin remove and background color*/
 #posNav {
 	left: -200px;
 	top: 600px;
-	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
 }
 #posPoliti {
 	left: -200px;
@@ -149,14 +149,13 @@ h1 { /*generel h1 formatering*/
 #titleText:hover {
 	color: #fff;
 }
-#creditHeader {
-	 background-color: none;
-}
+
 #creditButton { /*credits button fra startskjermen*/
 	position: relative;
 	width: 200px;
 	height: 40px;
     top: 600px;
+    opacity: 0;
 	left: 760px;
 	background-color: #af3333;
 	font-size: 1.4em;
@@ -208,9 +207,9 @@ h1 { /*generel h1 formatering*/
 	100% {left: 700px; opacity: 0;}
 }
 @-webkit-keyframes popUp{
-	0%{top: 600px;}
-	50%{top: 540px;}
-	100%{top: 560px;}
+	0%{top: 600px; opacity: 0;}
+	50%{top: 540px; opacity: 0;}
+	100%{top: 560px; opacity: 1;}
 }
 #gameover { /*game over knapp*/
 	height: 100px;
@@ -283,6 +282,7 @@ h1 { /*generel h1 formatering*/
 #stortinget  {
 	background-image: url("../bilder/Bakgrunner/stortinget.jpg");
 	cursor: crosshair;
+	display: block
 }
 #crosshair {
 	cursor: crosshair;
@@ -356,16 +356,30 @@ p{  /*generell format for alle p tekster*/
 	color: white;
 	position: relative;
 	height: 100px;
-	top: 10px;
+	top: 30%;
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
 	background-color: black;
 	position: relative;
 	top: -25px;
 	width: 960px;
-	height: 100px;
+	height: 900px;
+	top: -800px;
 	text-align: center;
 	margin: auto;
+	-webkit-animation: fadeOverlay 5s linear 0s 1 forwards; /*Remeber to change back to 10 sec delay*/
+}
+#sykehusTextPos {
+	top: -1100px;
+}
+#textPosFix {
+	top: -900px;
+}
+
+@-webkit-keyframes fadeOverlay {
+	0% {opacity: 1; height:  900px;}
+	99% {opacity: 0; height: 900px;}
+	100% {height: 0px; opacity: 0;	}
 }
 .snakkeBobble { /*Snakkebobble for dialogene*/
 	background-color: white;
@@ -381,15 +395,15 @@ p{  /*generell format for alle p tekster*/
 	-webkit-transition: all 2s ease;
 }
 #snakkeBobbleSene1 {
-	top: -700px;
+	top: -600px;
 	left: 0px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleSene1{
 	transform: scale(1.2);
 }
 #snakkeBobbleDead {
-	left: -270px;
-	top: -660px;
+	left: -290px;
+	top: -580px;
 	color: black
 }
 .animasjonsWrap:hover ~ #snakkeBobbleDead{
@@ -397,14 +411,14 @@ p{  /*generell format for alle p tekster*/
 }
 #snakkeBobbleFjord {
 	height: 100px;
-	top: -690px;
+	top: -590px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleFjord{
 	transform: scale(1.2);
 }
 #snakkeBobbleKjemi {
 	height: 200px;
-	top: -700px;
+	top: -600px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleKjemi{
 	transform: scale(1.2);
@@ -420,16 +434,16 @@ div.snakkeBobble > p {
 }
 #nursePicture {
 	position: relative;
-	top: -582px;
+	top: -622px;
 	left: 328px;
-	width: 300px;
+	width: 160px;
 	opacity: 0;
-	-webkit-animation: nurseIn 5s ease 1 forwards;
+	-webkit-animation: nurseIn 10s ease 1 forwards;
 }
 @-webkit-keyframes nurseIn {
-	0%{left: 500px; opacity: 0;}
+	0%{left: 600px; opacity: 0;}
 	50% {opacity: 0;}
-	100% {left: 328px; opacity: 1;}
+	100% {left: 228px; opacity: 1;}
 }
 #heisenberg {
 	width: 200px;
@@ -445,29 +459,27 @@ div.snakkeBobble > p {
  	top: 300px;
 }
 
-
-
 /*NAV animasjon av Erlend, fixed by Edvin så den passer*/
 #setning{
 	-webkit-animation:setning 5s;
 	-webkit-animation-fill-mode: forwards; 
 }
 #n{
-	-webkit-animation:Nav 5s;
+	-webkit-animation:Nav 5s 15s;
 	-webkit-animation-fill-mode: forwards; 
 	position:relative;
 	top: 600px;
 	left: 400px;
 }
 #a{
-	-webkit-animation:Nav2 5s;
+	-webkit-animation:Nav2 5s 15s;
 	-webkit-animation-fill-mode: forwards;
 	position:relative;
 	top: 50%;
 	left:520px;
 }
 #v{
-	-webkit-animation:Nav3 5s;
+	-webkit-animation:Nav3 5s 15s;
 	-webkit-animation-fill-mode: forwards;
 	position:relative;
 	top: 600px;
