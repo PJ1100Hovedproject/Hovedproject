@@ -434,16 +434,16 @@ div.snakkeBobble > p {
 }
 #nursePicture {
 	position: relative;
-	top: -582px;
+	top: -622px;
 	left: 328px;
-	width: 300px;
+	width: 160px;
 	opacity: 0;
 	-webkit-animation: nurseIn 10s ease 1 forwards;
 }
 @-webkit-keyframes nurseIn {
-	0%{left: 500px; opacity: 0;}
+	0%{left: 600px; opacity: 0;}
 	50% {opacity: 0;}
-	100% {left: 328px; opacity: 1;}
+	100% {left: 228px; opacity: 1;}
 }
 #heisenberg {
 	width: 200px;
