@@ -277,7 +277,7 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/bakgrunner/hawaii.jpg");
 }
 #oslofjord {
-	background-image: url("../bilder/bakgrunner/oslofjord.jpg");
+	background-image: url("../bilder/bakgrunner/oslofjord.png");
 }
 #stortinget  {
 	background-image: url("../bilder/bakgrunner/stortingetMedLove.jpg");
@@ -385,7 +385,7 @@ div.snakkeBobble p {
 	top: -800px;
 	text-align: center;
 	margin: auto;
-	-webkit-animation: fadeOverlay 2.5s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
+	-webkit-animation: fadeOverlay 2.5s linear 0s 1 forwards; /*Remeber to change back to 10 sec delay*/
 }
 #sykehusTextPos {
 	top: -1100px;
@@ -471,7 +471,15 @@ div.snakkeBobble > p {
 	width: 240px;
  	top: 125px;
  	left: 228px;
-
+}
+#sayMyName {
+	left: 300px;
+	opacity: 0;
+	-webkit-transition: all 1s linear;
+}
+#heisenberg:hover ~ #sayMyName{
+	opacity: 1;
+	font-size: 2em;
 }
 #normarkitt {
 	height: 40px;
@@ -491,55 +499,81 @@ div.snakkeBobble > p {
 	left: 170px;
 	top: 70px;
 }
+#bomsFjord {
+	width: 100px;
+	left: 300px;
+	top: 115px;
+	-webkit-animation: bomsDrukner 10s linear 2s 1 forwards;
+}
+@-webkit-keyframes bomsDrukner {
+	0% {left: 300px; top: 115px;}
+	10%{left: 400px; top: 115px; transform: rotate(15deg);}
+	20% {left: 600px; top: 115px; transform: rotate(-15deg);}
+	30% {left: 700px; top: 115px; transform: rotate(15deg);}
+	60% {left: 840px; top: -120px; transform: rotate(360deg);}
+	80% {left: 900px; top: 400px; opacity: 1;}
+	82% {left: 920px; top: 410px;}
+	84% {left: 900px; top: 420px;}
+	86% {left: 920px; top: 430px;}
+	88% {left: 900px; top: 440px;}
+	90% {left: 920px; top: 450px;}
+	92% {left: 920px; top: 460px;}
+	94% {left: 900px; top: 470px;}
+	96% {left: 920px; top: 480px;}
+	98% {left: 900px; top: 490px;}
+	100% {left: 920px; top: 500px; transform: rotate(60deg); opacity: 0;}
+}
+
+
+}
 #zombie {
 	-webkit-animation: walk 5s linear 0s infinite alternate;
 }
 @-webkit-keyframes walk {
-0% {
-	left: -500px;
-	transform: rotate(15deg);
-}
-10% {
-	left: -450px;
-	transform: rotate(-15deg);
-}
-20% {
-	left: -400px;
-	transform: rotate(15deg);
-}
-30% {
-	left: -350px;
-	transform: rotate(-15deg);
-}
+	0% {
+		left: -500px;
+		transform: rotate(15deg);
+	}
+	10% {
+		left: -450px;
+		transform: rotate(-15deg);
+	}
+	20% {
+		left: -400px;
+		transform: rotate(15deg);
+	}
+	30% {
+		left: -350px;
+		transform: rotate(-15deg);
+	}
 	40% {
-	left: -300px;
-	transform: rotate(15deg);
-}
-50% {
-	left: -250px;
-	transform: rotate(-15deg);
-}
-60% {
-	left: -200px;
-	transform: rotate(15deg);
-}
-70% {
-	left: -150px;
-	transform: rotate(-15deg);
-}
-80% {
-	left: -50px;
-	transform: rotate(15deg);
-}
-90% {
-	left: 0px;
-	transform: rotate(-15deg);
-}
-100% {
-	left: 50px;
-	transform: rotate(15deg);
-}
-
+		left: -300px;
+		transform: rotate(15deg);
+	}
+	50% {
+		left: -250px;
+		transform: rotate(-15deg);
+	}
+	60% {
+		left: -200px;
+		transform: rotate(15deg);
+	}
+	70% {
+		left: -150px;
+		transform: rotate(-15deg);
+	}
+	80% {
+		left: -50px;
+		transform: rotate(15deg);
+	}
+	90% {
+		left: 0px;
+		transform: rotate(-15deg);
+	}
+	100% {
+		left: 50px;
+		transform: rotate(15deg);
+	}	
 }
 
  #ingrediens1{
