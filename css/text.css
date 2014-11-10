@@ -44,6 +44,7 @@ body { /* margin remove and background color*/
 #option1 { /*POSISION for options bar*/
 	left: -147px;
 }
+#
 #posNav {
 	left: -200px;
 	top: 600px;
@@ -51,6 +52,9 @@ body { /* margin remove and background color*/
 }
 #posPoliti {
 	left: -200px;
+}
+#buttonPosFix {
+	left: 330px;
 }
 #gjennstand1 { /*gennstand på teknisk museum*/
 	width: 100px;
@@ -277,12 +281,23 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/bakgrunner/hawaii.jpg");
 }
 #oslofjord {
-	background-image: url("../bilder/Bakgrunner/oslofjord.jpg");
+	background-image: url("../bilder/bakgrunner/oslofjord.jpg");
 }
 #stortinget  {
-	background-image: url("../bilder/Bakgrunner/stortinget.jpg");
+	background-image: url("../bilder/bakgrunner/stortinget.jpg");
 	cursor: crosshair;
-	display: block
+}
+#kjemiLaerer {
+	background-image: url("../bilder/bakgrunner/kjemiLarerKontor-redigert.jpg");
+}
+#osloDestroyed {
+	background-image: url("../bilder/bakgrunner/barcode1.jpg");
+}
+#slottsparken {
+	background-image: url("../bilder/Bakgrunner/slottsparken.jpg");
+}
+#sykehus {
+	background-image: url("../bilder/Bakgrunner/legevaktenTeks.jpg");
 }
 #crosshair {
 	cursor: crosshair;
@@ -389,6 +404,7 @@ p{  /*generell format for alle p tekster*/
 	border-radius: 25%;
 	opacity: 0;
 	margin: auto;
+	border: 2px solid #000;
 	position: relative;
 	transform: scale(.5);
 	-webkit-animation: fadeIn 3s linear 5s 1 forwards;
@@ -446,9 +462,10 @@ div.snakkeBobble > p {
 	100% {left: 228px; opacity: 1;}
 }
 #heisenberg {
-	width: 200px;
- 	top: 300px;
+	width: 240px;
+ 	top: 125px;
  	left: 228px;
+
 }
 #normarkitt {
 	height: 100px;
@@ -458,7 +475,11 @@ div.snakkeBobble > p {
  	background-color: red;
  	top: 300px;
 }
-
+#boms {
+	top: 170px;
+	height: 350px;
+	left: -100px;
+}
 /*NAV animasjon av Erlend, fixed by Edvin så den passer*/
 #setning{
 	-webkit-animation:setning 5s;
