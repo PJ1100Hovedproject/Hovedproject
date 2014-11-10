@@ -21,7 +21,7 @@ body { /* margin remove and background color*/
 	background-color: #aaa;
 	top: 600px;
 	left: -125px;
-	-webkit-animation: showButton .5s linear 5s 1 forwards;
+	-webkit-animation: showButton .5s linear 10s 1 forwards;
 }
 @-webkit-keyframes showButton{
 	from{top: 600px;}
@@ -35,7 +35,7 @@ body { /* margin remove and background color*/
 	margin: auto;
 	top: 600px;
 	left: -147px;
-	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
 }
 @-webkit-keyframes showButtonTwo{
 	from{top: 600px;}
@@ -46,39 +46,34 @@ body { /* margin remove and background color*/
 }
 #
 #posNav {
-	left: -200px;
+	left: -100px;
 	top: 600px;
-	-webkit-animation: showButtonTwo .5s linear 5s 1 forwards;
 }
+
 #posPoliti {
-	left: -200px;
+	left: -125px;
+	top: 520px;
 }
+
 #buttonPosFix {
 	left: 330px;
 }
 #gjennstand1 { /*gennstand på teknisk museum*/
-	width: 100px;
-	height: 100px;
-	background-color: #af4303;
-	left: 300px;
+	width: 160px;
+	left: -100px;
 	position: relative;
-	top: 230px;
+	top: 250px;
 }
 #gjennstand2{ /*gennstand på teknisk museum*/
-	height: 200px;
 	position: relative;
-	width: 150px;
-	background-color: #eaff33;
-	top: 200px;
-	left: -400px;
+	width: 170px;
+	top: 130px;
+	left: -40px;
 }
 #gjennstand3 { /*gennstand på teknisk museum*/
-	height: 4px;
-	width: 4px;
-	position: relative;
-	background-color: red;
+	width: 70px;
 	left: 40px;
-	top: 40px;
+	top: 360px;
 	cursor: crosshair;
 }
 .alternativ { /*Svar alternativ boks formatering slik at de set like ut og DRY*/
@@ -285,7 +280,7 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/bakgrunner/oslofjord.jpg");
 }
 #stortinget  {
-	background-image: url("../bilder/bakgrunner/stortinget.jpg");
+	background-image: url("../bilder/bakgrunner/stortingetMedLove.jpg");
 	cursor: crosshair;
 }
 #kjemiLaerer {
@@ -303,9 +298,14 @@ h1 { /*generel h1 formatering*/
 #listog {
 	background-image: url("../bilder/Bakgrunner/listogKontor-redigert.jpg");
 }
-#crosshair {
+#ripArne {
+	background-image: url("../bilder/Bakgrunner/ripArneBakgrunn-redigert.jpg");
+}
+#tekniskmuseum {
+	background-image: url("../bilder/Bakgrunner/tekniskMuseumBakgrunn.jpg");
 	cursor: crosshair;
 }
+
 #tekstBoks {
 	background-color: red;
 	left: -200px;
@@ -313,19 +313,16 @@ h1 { /*generel h1 formatering*/
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
 	position: relative;
 	width: 900px;
-	height: 200px;
+	height: 160px;
 	margin: 0px auto;
 	border: #3f3 1px solid;
 	overflow: hidden;
-}
-div#banner{
-	/*Posision for banner går her, treger ikke posisjonere pga den passer der den er*/
 }
 div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og animert*/ 
 	position: relative;
 	background-image: url(../bilder/objects/matrix.jpg);
 	width: 1320px;
-	height: 200px;
+	height: 130px;
 	-webkit-animation: backdropRoll linear 12s infinite;
 }
 #bannerContent { /*Dette er det som skal stå inne i banneret aka teksten som sier Back To Start etc*/
@@ -352,7 +349,7 @@ div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir put
 }
 @-webkit-keyframes topToBottom { /*animasjon for zombie banneret*/
 	from {top: -800px}
-	to {top: 200px; left: -450px;}
+	to {top: 390px; left: -450px;}
 }
 
 @-webkit-keyframes textColor { /*Animasjon for blinkende tekst*/
@@ -371,11 +368,13 @@ div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir put
 	left: 360px;
 }
 
-p{  /*generell format for alle p tekster*/
+div.textDialog p{  /*generell format for alle p dialog tekster*/
 	color: white;
 	position: relative;
-	height: 100px;
 	top: 30%;
+}
+div.snakkeBobble p {
+	top: -20px; 
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
 	background-color: black;
@@ -386,13 +385,16 @@ p{  /*generell format for alle p tekster*/
 	top: -800px;
 	text-align: center;
 	margin: auto;
-	-webkit-animation: fadeOverlay 5s linear 0s 1 forwards; /*Remeber to change back to 10 sec delay*/
+	-webkit-animation: fadeOverlay 2.5s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
 }
 #sykehusTextPos {
 	top: -1100px;
 }
 #textPosFix {
 	top: -900px;
+}
+#textPosFixMotgift {
+	top: -650px;
 }
 
 @-webkit-keyframes fadeOverlay {
@@ -458,7 +460,7 @@ div.snakkeBobble > p {
 	left: 328px;
 	width: 160px;
 	opacity: 0;
-	-webkit-animation: nurseIn 10s ease 1 forwards;
+	-webkit-animation: nurseIn 5s ease 10s 1 forwards;
 }
 @-webkit-keyframes nurseIn {
 	0%{left: 600px; opacity: 0;}
@@ -472,12 +474,12 @@ div.snakkeBobble > p {
 
 }
 #normarkitt {
-	height: 100px;
+	height: 40px;
 	position: relative;
- 	width: 400px;
+ 	width: 100px;
  	cursor: crosshair;
- 	background-color: red;
- 	top: 300px;
+ 	top: 555px;
+ 	left: -250px;
 }
 #boms {
 	top: 170px;
@@ -489,98 +491,207 @@ div.snakkeBobble > p {
 	left: 170px;
 	top: 70px;
 }
+#zombie {
+	-webkit-animation: walk 5s linear 0s infinite alternate;
+}
+@-webkit-keyframes walk {
+0% {
+	left: -500px;
+	transform: rotate(15deg);
+}
+10% {
+	left: -450px;
+	transform: rotate(-15deg);
+}
+20% {
+	left: -400px;
+	transform: rotate(15deg);
+}
+30% {
+	left: -350px;
+	transform: rotate(-15deg);
+}
+	40% {
+	left: -300px;
+	transform: rotate(15deg);
+}
+50% {
+	left: -250px;
+	transform: rotate(-15deg);
+}
+60% {
+	left: -200px;
+	transform: rotate(15deg);
+}
+70% {
+	left: -150px;
+	transform: rotate(-15deg);
+}
+80% {
+	left: -50px;
+	transform: rotate(15deg);
+}
+90% {
+	left: 0px;
+	transform: rotate(-15deg);
+}
+100% {
+	left: 50px;
+	transform: rotate(15deg);
+}
 
-/*NAV animasjon av Erlend, fixed by Edvin så den passer*/
-#setning{
-	-webkit-animation:setning 5s;
-	-webkit-animation-fill-mode: forwards; 
 }
-#n{
-	-webkit-animation:Nav 5s 15s;
-	-webkit-animation-fill-mode: forwards; 
+
+ #ingrediens1{
+	font-size:40px;
 	position:relative;
-	top: 600px;
-	left: 400px;
-}
-#a{
-	-webkit-animation:Nav2 5s 15s;
-	-webkit-animation-fill-mode: forwards;
-	position:relative;
-	top: 50%;
-	left:520px;
-}
-#v{
-	-webkit-animation:Nav3 5s 15s;
-	-webkit-animation-fill-mode: forwards;
-	position:relative;
-	top: 600px;
-	left:310px;
-}
-@-webkit-keyframes Nav{
-	0%{
-		top:600px;
-		left:-280px;
-	}
-	90%{
-		top: 0px;
-		left:-100px;
-		font-weight:normal;
-		font-size:medium;
-	}
-	100%{
-		top:0px;
-		left:-100px;
-		color: red;
-		font-weight: bold;
-		font-size:3em;
-	}
+	display:block;
+	height:30px;
 	
 }
-@-webkit-keyframes Nav2{
-	0%{
-		top:600px;
-		left:-160px;
-	}
-	90%{
-		top:0px;
-		left:-100px;
-		font-weight:normal;
-		font-size:medium;
-	}
-	100%{
-		top:0px;
-		left:-100px;
-		color: red;
-		font-weight: bold;
-		font-size:3em;
-	}
-	
+
+#ingrediens2{
+	height:30px;
+	font-size:40px;
+	position:relative;
+	display:block;
+
 }
-@-webkit-keyframes Nav3{
-	0%{
-		top:600px;
-		left:45px;
-	}
-	90%{
-		top:0px;
-		left:-100px;
-		font-weight:normal;
-		font-size:medium;
-	}
-	100%{
-		top:0px;
-		left: -100px;
-		font-weight: bold;
-		color: red;
-		font-size: 3em;
-	}
-	
+
+#ingrediens3{
+	height:30px;
+	font-size:40px;
+	position:relative;
+	display:block;
 }
-@-webkit-keyframes setning{
-	75%{
-		opacity:1;
+
+#forsteBokstav1{
+	-webkit-animation: BokstaveneFallerPaaPlass1 4s linear 13s forwards;
+	position:relative;
+
+
+}
+
+#forsteBokstav2{
+	-webkit-animation: BokstaveneFallerPaaPlass2 4s linear 15s forwards;
+	position:relative;
+}
+
+#forsteBokstav3{
+	-webkit-animation: BokstaveneFallerPaaPlass3 4s linear 17s forwards;
+	position:relative;
+}
+
+@-webkit-keyframes BokstaveneFallerPaaPlass1{
+	0%{
+		transform:scale(1);
+
 	}
+
+	50%{
+		color:red;
+		left:0px;
+		top:0px;
+		transform:scale(1);
+
+	}
+
+	80%{
+		transform:scale(1);
+		left:20px;
+		top:250px;
+		color:red;
+
+	}
+
 	100%{
+		left:20px;
+		top:250px;
+		color:red;
+		transform:scale(2);
+
+	}
+}
+
+@-webkit-keyframes BokstaveneFallerPaaPlass2{
+	0%{
+		transform:scale(1);
+
+	}
+
+	50%{
+		color:red;
+		left:0px;
+		top:0px;
+		transform:scale(1);
+
+	}
+
+	80%{
+		transform:scale(1);
+		left:140px;
+		top:180px;
+		color:red;
+
+	}
+
+	100%{
+		left:140px;
+		top:180px;
+		color:red;
+		transform:scale(2);
+
+	}
+}
+
+@-webkit-keyframes BokstaveneFallerPaaPlass3{
+	0%{
+		transform:scale(1);
+
+	}
+
+	50%{
+		color:red;
+		left:0px;
+		top:0px;
+		transform:scale(1);
+
+	}
+
+	80%{
+		transform:scale(1);
+		left:190px;
+		top:110px;
+		color:red;
+
+	}
+
+	100%{
+		left:190px;
+		top:110px;
+		color:red;
+		transform:scale(2);
+
+	}
+}
+
+#aapenbaring{
+	opacity:0;
+	height:30px;
+	top:190px;
+	font-size:25px;
+	position:relative;
+	display:block;
+	-webkit-animation: aapenbaringenViserSeg 3s linear 20s forwards;
+}
+
+@-webkit-keyframes aapenbaringenViserSeg{
+	0%{
 		opacity:0;
 	}
+
+	100%{
+		opacity:1;
+	}
 }
+
