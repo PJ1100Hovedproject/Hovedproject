@@ -254,7 +254,7 @@ h1 { /*generel h1 formatering*/
 	transform: scale(2) rotate(1080deg);
 	border-radius: 20%;
 }
-#rip{ /*RIP bilde som hører med til dead.html bakgrunnen*/
+/* #rip{  RIP bilde som hører med til dead.html bakgrunnen, tok den vekk pga lite plass
 	top: -20px;
 	left: 500px;
 	width: 200px;
@@ -266,6 +266,7 @@ h1 { /*generel h1 formatering*/
 	from {left: 800px;}
 	to {left: 40px;}
 }
+*/
 
 /*Bakgrunner går her.*/
 #hawaii{
@@ -298,6 +299,9 @@ h1 { /*generel h1 formatering*/
 }
 #sykehus {
 	background-image: url("../bilder/Bakgrunner/legevaktenTeks.jpg");
+}
+#listog {
+	background-image: url("../bilder/Bakgrunner/listogKontor-redigert.jpg");
 }
 #crosshair {
 	cursor: crosshair;
@@ -348,7 +352,7 @@ div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir put
 }
 @-webkit-keyframes topToBottom { /*animasjon for zombie banneret*/
 	from {top: -800px}
-	to {top: 200px; left: -350px;}
+	to {top: 200px; left: -450px;}
 }
 
 @-webkit-keyframes textColor { /*Animasjon for blinkende tekst*/
@@ -480,6 +484,12 @@ div.snakkeBobble > p {
 	height: 350px;
 	left: -100px;
 }
+#listog-farger {
+	width: 300px;
+	left: 170px;
+	top: 70px;
+}
+
 /*NAV animasjon av Erlend, fixed by Edvin så den passer*/
 #setning{
 	-webkit-animation:setning 5s;
