@@ -293,7 +293,7 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/Bakgrunner/slottsparken.jpg");
 }
 #sykehus {
-	background-image: url("../bilder/Bakgrunner/legevaktenTeks.jpg");
+	background-image: url("../bilder/Bakgrunner/legevakten-redigert.jpg");
 }
 #listog {
 	background-image: url("../bilder/Bakgrunner/listogKontor-redigert.jpg");
@@ -322,7 +322,7 @@ div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og anim
 	position: relative;
 	background-image: url(../bilder/objects/matrix.jpg);
 	width: 1320px;
-	height: 130px;
+	height: 160px;
 	-webkit-animation: backdropRoll linear 12s infinite;
 }
 #bannerContent { /*Dette er det som skal stå inne i banneret aka teksten som sier Back To Start etc*/
@@ -330,7 +330,7 @@ div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og anim
 	width: 96%;
 	height: 160px;
 	margin: 20px auto;
-	top: -200px;
+	top: -180px;
 	color: #f00;
 	font-size: 3.2em;
 	-webkit-animation: textColor .5s linear infinite;
@@ -439,7 +439,7 @@ div.snakkeBobble p {
 	transform: scale(1.2);
 }
 #snakkeBobbleKjemi {
-	height: 200px;
+	height: 100px;
 	top: -600px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleKjemi{
@@ -501,27 +501,28 @@ div.snakkeBobble > p {
 }
 #bomsFjord {
 	width: 100px;
-	left: 300px;
+	left: -400px;
 	top: 115px;
+	position: relative;
 	-webkit-animation: bomsDrukner 10s linear 2s 1 forwards;
 }
 @-webkit-keyframes bomsDrukner {
-	0% {left: 300px; top: 115px;}
-	10%{left: 400px; top: 115px; transform: rotate(15deg);}
-	20% {left: 600px; top: 115px; transform: rotate(-15deg);}
-	30% {left: 700px; top: 115px; transform: rotate(15deg);}
-	60% {left: 840px; top: -120px; transform: rotate(360deg);}
-	80% {left: 900px; top: 400px; opacity: 1;}
-	82% {left: 920px; top: 410px;}
-	84% {left: 900px; top: 420px;}
-	86% {left: 920px; top: 430px;}
-	88% {left: 900px; top: 440px;}
-	90% {left: 920px; top: 450px;}
-	92% {left: 920px; top: 460px;}
-	94% {left: 900px; top: 470px;}
-	96% {left: 920px; top: 480px;}
-	98% {left: 900px; top: 490px;}
-	100% {left: 920px; top: 500px; transform: rotate(60deg); opacity: 0;}
+	0% {left: -400px; top: 115px;}
+	10%{left: -300px; top: 115px; transform: rotate(15deg);}
+	20% {left: -200px; top: 115px; transform: rotate(-15deg);}
+	30% {left: -100px; top: 115px; transform: rotate(15deg);}
+	60% {left: 0px; top: -120px; transform: rotate(360deg);}
+	80% {left: 100px; top: 300px; opacity: 1;}
+	82% {left: 120px; top: 310px;}
+	84% {left: 100px; top: 320px;}
+	86% {left: 120px; top: 330px;}
+	88% {left: 100px; top: 340px;}
+	90% {left: 120px; top: 350px;}
+	92% {left: 100px; top: 360px;}
+	94% {left: 120px; top: 370px;}
+	96% {left: 100px; top: 380px;}
+	98% {left: 120px; top: 390px;}
+	100% {left: 100px; top: 500px; transform: rotate(60deg); opacity: 0;}
 }
 
 
