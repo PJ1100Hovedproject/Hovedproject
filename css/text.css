@@ -25,7 +25,7 @@ body { /* margin remove and background color*/
 	font-family:impact;
 	top: 600px;
 	left: -125px;
-	-webkit-animation: showButton .5s linear 15s 1 forwards;
+	-webkit-animation: showButton .5s linear 17s 1 forwards;
 }
 @-webkit-keyframes showButton{
 	from{top: 600px;}
@@ -39,7 +39,7 @@ body { /* margin remove and background color*/
 	margin: auto;
 	top: 600px;
 	left: -147px;
-	-webkit-animation: showButtonTwo .5s linear 15s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 17s 1 forwards;
 }
 @-webkit-keyframes showButtonTwo{
 	from{top: 600px;}
