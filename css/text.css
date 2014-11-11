@@ -113,6 +113,9 @@ body { /* margin remove and background color*/
 	font-size: 1em;
 	color: black;
 	left: -480px;
+	border-color:black;
+	border-style:solid;
+	border-radius:10px;
 	position: absolute;
 }
 div { /*sørger for at alle diver har samme font og er sentrert med en passe størrelse*/
