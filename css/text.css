@@ -517,6 +517,11 @@ div.snakkeBobble > p {
 	left: 170px;
 	top: 70px;
 }
+#listog-farger2 {
+	width: 300px;
+	position: relative;
+	left: -200px;
+}
 #bomsFjord {
 	width: 100px;
 	left: -400px;
