@@ -48,7 +48,6 @@ body { /* margin remove and background color*/
 #option1 { /*POSISION for options bar*/
 	left: -147px;
 }
-#
 #posNav {
 	left: -100px;
 	top: 600px;
@@ -106,6 +105,10 @@ body { /* margin remove and background color*/
 #alternativ3 { /*posisjon for svar alternativer*/
 	top: 444px;
 }
+#tilbakeFeilSvar {
+	left: -380px;
+	top: 380px;
+}
 .question { /*der spørsmålet til listogs kontor kommer opp*/
 	height: 80px;
 	width: 960px;
@@ -145,18 +148,6 @@ h1 { /*generel h1 formatering*/
 	margin: 0px;
 	font-family: Georgia, Arial, Verdana;
 }
-#spillTittel { /*Starts tittelen*/
-	background-color: red;
-	width: 960px;
-	height: 150px;
-	left: 100px;
-	top: 200px;
-	-webkit-animation: slideIn 3s ease 1 forwards;
-}
-@-webkit-keyframes slideIn {
-	from {left: -1700px; color: #fff;}
-	to{left: 0px; color: #57B816;}
-}
 #titleText { /*Tittel tekst med slide in animasjon brukes på flere titteler*/
 	width: 960px;
 	color: #fff;
@@ -166,6 +157,11 @@ h1 { /*generel h1 formatering*/
 	-webkit-animation: slideIn 5s ease 1 forwards;
 	-webkit-transition: color .2s linear;
 }
+@-webkit-keyframes slideIn {
+	from {left: -1700px; color: #fff;}
+	to{left: 0px; color: #57B816;}
+}
+
 #titleText:hover {
 	color: #fff;
 }
@@ -237,7 +233,7 @@ h1 { /*generel h1 formatering*/
 	background-color: #bbb;
 	font-size: 3em;
 	margin: auto;
-	top: 200px;
+	top: 500px;
 	left: -230px;
 	position: relative;
 }
@@ -270,19 +266,7 @@ h1 { /*generel h1 formatering*/
 	transform: scale(2) rotate(1080deg);
 	border-radius: 20%;
 }
-/* #rip{  RIP bilde som hører med til dead.html bakgrunnen, tok den vekk pga lite plass
-	top: -20px;
-	left: 500px;
-	width: 200px;
-	height: 200px;
-	position: relative;
-	-webkit-animation: leftSlide 5s ease 15s 1 forwards;
-}
-@-webkit-keyframes leftSlide {
-	from {left: 800px;}
-	to {left: 40px;}
-}
-*/
+
 
 /*Bakgrunner går her.*/
 #hawaii{
@@ -326,11 +310,6 @@ h1 { /*generel h1 formatering*/
 #startscreen{
 	background-image: url("../bilder/karakterer/startscreen-karakterer.png");
 	background-repeat: no-repeat;
-}
-
-#tekstBoks {
-	background-color: red;
-	left: -200px;
 }
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
 	position: relative;
@@ -383,9 +362,7 @@ div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir put
 	from {right: 0px;}
 	to {right: 225px;}
 }
-#tilbakeKnapp { /*Posision fix for Tilbake Knapp*/
-	left: -600px;	
-}
+
 #tilbakeKnappCredits { /*Posision fix for Tilbake Knapp Credits*/
 	left: 360px;
 }
@@ -395,7 +372,7 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 	position: relative;
 	top: 30%;
 }
-	div.snakkeBobble p {
+div.snakkeBobble p {
 	top: -20px; 
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
@@ -407,9 +384,6 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 	text-align: center;
 	margin: auto;
 	-webkit-animation: fadeOverlay 2.5s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
-}
-#sykehusTextPos {
-	top: -1200px;
 }
 #textPosFix {
 	top: -1000px;
@@ -462,7 +436,6 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 #snakkeBobbleKjemi {
 	height: 200px;
 	top: -600px;
-
 }
 .animasjonsWrap:hover ~ #snakkeBobbleKjemi{
 	transform: scale(1.2);
@@ -512,7 +485,14 @@ div.snakkeBobble > p {
  	left: -250px;
 }
 #boms {
+	position: relative;
 	top: 170px;
+	height: 350px;
+	left: -100px;
+}
+#bomsSlutt {
+	position: relative;
+	top: 200px;
 	height: 350px;
 	left: -100px;
 }
@@ -550,6 +530,20 @@ div.snakkeBobble > p {
 	96% {left: 100px; top: 380px;}
 	98% {left: 120px; top: 390px;}
 	100% {left: 100px; top: 500px; transform: rotate(60deg); opacity: 0;}
+}
+#mrL {
+	width: 200px;
+	top: 180px;
+	left: 140px;
+	position: relative;
+}
+#pengepong {
+	width: 100px;
+	height: 100px;
+	top: 330px;
+	cursor: crosshair;
+	position: relative;
+	left: 50px;
 }
 
 #zombie{
