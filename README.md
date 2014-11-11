@@ -21,3 +21,5 @@ Handlingsplan Excel: http://goo.gl/HnBieY
 06.11.14 14:20 la til Html som skal være lik Plan A.
 
 Gratis bilderedigerings program : http://ipiccy.com/ 
+
+Test siden så mye som mulig se etter bugs / mulige forbedringer av koden
