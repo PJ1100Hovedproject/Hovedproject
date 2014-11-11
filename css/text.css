@@ -413,7 +413,6 @@ div.snakkeBobble p {
 #textPosFixMotgift {
 	top: -750px;
 }
-
 @-webkit-keyframes fadeOverlay {
 	0% {opacity: 1; height:  900px;}
 	99% {opacity: 0; height: 900px;}
@@ -456,7 +455,7 @@ div.snakkeBobble p {
 	transform: scale(1.2);
 }
 #snakkeBobbleKjemi {
-	height: 100px;
+	height: 200px;
 	top: -600px;
 
 }
