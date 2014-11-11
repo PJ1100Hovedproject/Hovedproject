@@ -18,7 +18,11 @@ body { /* margin remove and background color*/
 .button { /*buttons som sørger for at man kommer seg videre*/
 	width: 300px;
 	height: 40px;
-	background-color: #aaa;
+	background-color: #FFFFFF;
+	border-color:black;
+	border-style:solid;
+	border-radius:10px;
+	font-family:impact;
 	top: 600px;
 	left: -125px;
 	-webkit-animation: showButton .5s linear 10s 1 forwards;
@@ -28,7 +32,7 @@ body { /* margin remove and background color*/
 	to{top: 560px;}
 }
 .button:hover{ /*genrell button hover*/
-	background-color: #000;
+	background-color: #FFFFFF;
 	color: #F00 
 }
 #button2 { /*buttton 2 når det er 2 buttons på skjermen*/
