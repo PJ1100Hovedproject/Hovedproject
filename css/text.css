@@ -18,7 +18,7 @@ body { /* margin remove and background color*/
 .button { /*buttons som sørger for at man kommer seg videre*/
 	width: 300px;
 	height: 40px;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	border-color:black;
 	border-style:solid;
 	border-radius:10px;
@@ -32,7 +32,7 @@ body { /* margin remove and background color*/
 	to{top: 560px;}
 }
 .button:hover{ /*genrell button hover*/
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	color: #F00 
 }
 #button2 { /*buttton 2 når det er 2 buttons på skjermen*/
