@@ -150,7 +150,7 @@ h1 { /*generel h1 formatering*/
 }
 #titleText { /*Tittel tekst med slide in animasjon brukes på flere titteler*/
 	width: 960px;
-	color: #fff;
+	color: #000;
 	left: -900px;
 	font-size: 4em;
 	position: relative;
@@ -158,8 +158,8 @@ h1 { /*generel h1 formatering*/
 	-webkit-transition: color .2s linear;
 }
 @-webkit-keyframes slideIn {
-	from {left: -1700px; color: #fff;}
-	to{left: 0px; color: #57B816;}
+	from {left: -1700px;}
+	to{left: 0px;}
 }
 
 #titleText:hover {
