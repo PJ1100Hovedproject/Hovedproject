@@ -151,7 +151,7 @@ h1 { /*generel h1 formatering*/
 	height: 150px;
 	left: 100px;
 	top: 200px;
-	-webkit-animation: slideIn 5s ease 1 forwards;
+	-webkit-animation: slideIn 3s ease 1 forwards;
 }
 @-webkit-keyframes slideIn {
 	from {left: -1700px; color: #fff;}
@@ -358,7 +358,7 @@ div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og anim
 	-webkit-animation: textColor .5s linear infinite;
 }
 div#bannerZombie{ /*Posisijonene til Zombie banneret*/ 
-	left: -350px;
+	left: -150px;
 	top: -500px;
 	-webkit-animation: topToBottom 5s ease 10s 1 forwards;
 }
@@ -371,7 +371,7 @@ div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir put
 }
 @-webkit-keyframes topToBottom { /*animasjon for zombie banneret*/
 	from {top: -800px}
-	to {top: 390px; left: -450px;}
+	to {top: 390px; left: -270px;}
 }
 
 @-webkit-keyframes textColor { /*Animasjon for blinkende tekst*/
@@ -395,7 +395,7 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 	position: relative;
 	top: 30%;
 }
-div.snakkeBobble p {
+	div.snakkeBobble p {
 	top: -20px; 
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
@@ -417,6 +417,7 @@ div.snakkeBobble p {
 #textPosFixMotgift {
 	top: -750px;
 }
+
 @-webkit-keyframes fadeOverlay {
 	0% {opacity: 1; height:  900px;}
 	99% {opacity: 0; height: 900px;}
@@ -444,9 +445,9 @@ div.snakkeBobble p {
 	transform: scale(1.2);
 }
 #snakkeBobbleDead {
+	height: 200px;
 	left: -290px;
 	top: -680px;
-	color: black
 }
 .animasjonsWrap:hover ~ #snakkeBobbleDead{
 	transform: scale(1.2);
@@ -551,54 +552,53 @@ div.snakkeBobble > p {
 	100% {left: 100px; top: 500px; transform: rotate(60deg); opacity: 0;}
 }
 
-
-}
-#zombie {
+#zombie{
+	position: relative;
 	-webkit-animation: walk 5s linear 0s infinite alternate;
 }
 @-webkit-keyframes walk {
 	0% {
-		left: -500px;
-		transform: rotate(15deg);
-	}
-	10% {
-		left: -450px;
-		transform: rotate(-15deg);
-	}
-	20% {
 		left: -400px;
 		transform: rotate(15deg);
 	}
-	30% {
+	10% {
 		left: -350px;
 		transform: rotate(-15deg);
 	}
-	40% {
+	20% {
 		left: -300px;
 		transform: rotate(15deg);
 	}
-	50% {
+	30% {
 		left: -250px;
 		transform: rotate(-15deg);
 	}
-	60% {
+	40% {
 		left: -200px;
 		transform: rotate(15deg);
 	}
-	70% {
+	50% {
 		left: -150px;
 		transform: rotate(-15deg);
 	}
-	80% {
+	60% {
+		left: -100px;
+		transform: rotate(15deg);
+	}
+	70% {
 		left: -50px;
+		transform: rotate(-15deg);
+	}
+	80% {
+		left: 0px;
 		transform: rotate(15deg);
 	}
 	90% {
-		left: 0px;
+		left: 50px;
 		transform: rotate(-15deg);
 	}
 	100% {
-		left: 50px;
+		left: 100px;
 		transform: rotate(15deg);
 	}	
 }
