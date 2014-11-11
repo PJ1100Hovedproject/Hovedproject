@@ -323,6 +323,10 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/Bakgrunner/tekniskMuseumBakgrunn.jpg");
 	cursor: crosshair;
 }
+#startscreen{
+	background-image: url("../bilder/karakterer/startscreen-karakterer.png");
+	background-repeat: no-repeat;
+}
 
 #tekstBoks {
 	background-color: red;
