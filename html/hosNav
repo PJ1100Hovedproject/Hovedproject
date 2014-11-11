@@ -7,12 +7,12 @@
 </head>
 <body>
 	<div class="animasjonsWrap" id="nav">
-		<a href="reddOslo.html"><div class="button" id="option1">Si det til politiet</div></a>
-		<a href="hosNav.html"><div class="button" id="button2">Hjelp NAV</div></a>
+			<a href="hawaii.html"><div class="button">Fortsett</div></a>
+			<img id="mrL" src="../bilder/karakterer/mrL.png">
 	</div>
 	<div id="blackbox"></div>
 	<div class="textDialog">
-		<p>DO TO dialog</p>
+		<p>TO DO</p>
 	</div>
 </body>
 </html>
