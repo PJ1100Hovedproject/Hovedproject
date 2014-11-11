@@ -21,7 +21,7 @@ body { /* margin remove and background color*/
 	background-color: #aaa;
 	top: 600px;
 	left: -125px;
-	-webkit-animation: showButton .5s linear 10s 1 forwards;
+	-webkit-animation: showButton .5s linear 15s 1 forwards;
 }
 @-webkit-keyframes showButton{
 	from{top: 600px;}
@@ -35,7 +35,7 @@ body { /* margin remove and background color*/
 	margin: auto;
 	top: 600px;
 	left: -147px;
-	-webkit-animation: showButtonTwo .5s linear 10s 1 forwards;
+	-webkit-animation: showButtonTwo .5s linear 15s 1 forwards;
 }
 @-webkit-keyframes showButtonTwo{
 	from{top: 600px;}
@@ -111,6 +111,15 @@ div { /*sÃ¸rger for at alle diver har samme font og er sentrert med en passe stÃ
 	text-align: center;
 	font-size: 1.4em;
 }
+#blackbox {
+	height: 100px;
+	width: 960px;
+	background-color: black;
+	margin: auto;
+	display: block;
+	position: relative;
+	top: 0px;	
+}
 a:link { /*link formatering*/
 	color: #000;
 	text-decoration: none;
@@ -162,8 +171,8 @@ h1 { /*generel h1 formatering*/
 	-webkit-transition: all .1s linear;
 }
 #creditButton:hover {
-	border-top: 3px solid #ddd;
-	border-left: 3px solid #ddd;
+	color: #F00;
+	background-color: #000;
 }
 .credits {
 	width: 600px;
@@ -379,22 +388,21 @@ div.snakkeBobble p {
 .textDialog { /*dialog boksen under animasjons wrapen*/
 	background-color: black;
 	position: relative;
-	top: -25px;
 	width: 960px;
 	height: 900px;
-	top: -800px;
+	top: -900px;
 	text-align: center;
 	margin: auto;
-	-webkit-animation: fadeOverlay 2.5s linear 0s 1 forwards; /*Remeber to change back to 10 sec delay*/
+	-webkit-animation: fadeOverlay 2.5s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
 }
 #sykehusTextPos {
-	top: -1100px;
+	top: -1200px;
 }
 #textPosFix {
-	top: -900px;
+	top: -1000px;
 }
 #textPosFixMotgift {
-	top: -650px;
+	top: -750px;
 }
 
 @-webkit-keyframes fadeOverlay {
@@ -413,11 +421,11 @@ div.snakkeBobble p {
 	border: 2px solid #000;
 	position: relative;
 	transform: scale(.5);
-	-webkit-animation: fadeIn 3s linear 5s 1 forwards;
+	-webkit-animation: fadeIn 3s linear 12s 1 forwards;
 	-webkit-transition: all 2s ease;
 }
 #snakkeBobbleSene1 {
-	top: -600px;
+	top: -700px;
 	left: 0px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleSene1{
@@ -425,7 +433,7 @@ div.snakkeBobble p {
 }
 #snakkeBobbleDead {
 	left: -290px;
-	top: -580px;
+	top: -680px;
 	color: black
 }
 .animasjonsWrap:hover ~ #snakkeBobbleDead{
@@ -433,14 +441,14 @@ div.snakkeBobble p {
 }
 #snakkeBobbleFjord {
 	height: 100px;
-	top: -590px;
+	top: -690px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleFjord{
 	transform: scale(1.2);
 }
 #snakkeBobbleKjemi {
 	height: 200px;
-	top: -600px;
+	top: -700px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleKjemi{
 	transform: scale(1.2);
@@ -456,7 +464,7 @@ div.snakkeBobble > p {
 }
 #nursePicture {
 	position: relative;
-	top: -622px;
+	top: -722px;
 	left: 328px;
 	width: 160px;
 	opacity: 0;
@@ -504,7 +512,7 @@ div.snakkeBobble > p {
 	left: -400px;
 	top: 115px;
 	position: relative;
-	-webkit-animation: bomsDrukner 10s linear 2s 1 forwards;
+	-webkit-animation: bomsDrukner 10s linear 12s 1 forwards;
 }
 @-webkit-keyframes bomsDrukner {
 	0% {left: -400px; top: 115px;}
