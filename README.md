@@ -16,6 +16,8 @@ Handlingsplan Word: http://goo.gl/oScFq7
 
 Handlingsplan Excel: http://goo.gl/HnBieY
 
+12.11.14: Presentasjon til fredag: http://goo.gl/fH3kqE
+
 06.11.14 14:20 la til Html som skal være lik Plan A.
 
 Gratis bilderedigerings program : http://ipiccy.com/ 
