@@ -276,7 +276,6 @@ h1 { /*generel h1 formatering*/
 	border-radius: 20%;
 }
 
-
 /*Bakgrunner går her.*/
 #hawaii{
 	background-image: url("../bilder/bakgrunner/hawaii.jpg");
@@ -495,6 +494,7 @@ div.snakkeBobble > p {
  	top: 555px;
  	left: -250px;
 }
+
 #bomsStart {
 	width: 200px;
 	top: 100px;
