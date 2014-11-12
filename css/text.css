@@ -3,7 +3,7 @@
 .animasjonsWrap { /*aniwrap 960*600 make sure overflow hidden, i like to have it visible while developing*/
 	width: 960px;
 	height: 600px;
-	background-color: #2a2a2a;
+	background-color: #FFFFFF;
 	margin: auto;
 	overflow: hidden;
 }
@@ -151,6 +151,7 @@ h1 { /*generel h1 formatering*/
 	color: #000;
 	left: -900px;
 	font-size: 4em;
+	font-family:impact;
 	position: relative;
 	-webkit-animation: slideIn 5s ease 1 forwards;
 	-webkit-transition: color .2s linear;
@@ -160,7 +161,7 @@ h1 { /*generel h1 formatering*/
 	to{left: 0px;}
 }
 #titleText:hover {
-	color: #fff;
+	color: #9E1010;
 }
 #creditButton { /*credits button fra startskjermen*/
 	position: relative;
@@ -183,7 +184,7 @@ h1 { /*generel h1 formatering*/
 	height: 100px;
 	position: relative;
 	left: -900px;
-	color: #fff;
+	color: #ffffff;
 }
 #edvin {
 	-webkit-animation: scrolling 10s linear infinite;
@@ -213,8 +214,8 @@ h1 { /*generel h1 formatering*/
 	-webkit-animation: scrolling 10s linear 6s infinite;
 }
 @-webkit-keyframes scrolling {
-	0% {left: -700px; color: #000;}
-	10% {left: -100px; color: #baffad;}
+	0% {left: -700px; color: #000000;}
+	10% {left: -100px; color: #000000;}
 	90%{left: 100px; color: #fff; opacity: 1;} 
 	100% {left: 700px; opacity: 0;}
 }
