@@ -516,6 +516,12 @@ div.snakkeBobble > p {
 	height: 350px;
 	left: -100px;
 }
+#arneHawaii {
+	position: relative;
+	width: 70px;
+	top: 300px;
+	left: -100px;
+}
 #listog-farger {
 	width: 300px;
 	left: 170px;
