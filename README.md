@@ -18,6 +18,8 @@ Handlingsplan Excel: http://goo.gl/HnBieY
 
 12.11.14: Presentasjon til fredag: http://goo.gl/fH3kqE
 
+12.11.14: Kilder: https://docs.google.com/a/westerdals.no/document/d/1HQ-kQDumG9tSC6bmYq-Chf5NwF9cf4UDDW82zpLCnaE/edit?usp=sharing
+
 06.11.14 14:20 la til Html som skal være lik Plan A.
 
 Gratis bilderedigerings program : http://ipiccy.com/ 
