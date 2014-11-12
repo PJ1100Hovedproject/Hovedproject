@@ -52,12 +52,10 @@ body { /* margin remove and background color*/
 	left: -100px;
 	top: 600px;
 }
-
 #posPoliti {
 	left: -125px;
 	top: 520px;
 }
-
 #buttonPosFix {
 	left: 330px;
 }
@@ -107,7 +105,7 @@ body { /* margin remove and background color*/
 }
 #tilbakeFeilSvar {
 	left: -380px;
-	top: 380px;
+	top: 546px;
 }
 .question { /*der spørsmålet til listogs kontor kommer opp*/
 	height: 80px;
@@ -126,7 +124,7 @@ div { /*sørger for at alle diver har samme font og er sentrert med en passe st�
 	text-align: center;
 	font-size: 1.4em;
 }
-#blackbox {
+#blackbox { /*Blackbox under for å skjule lenkene som har pos abs*/
 	height: 100px;
 	width: 960px;
 	background-color: black;
@@ -161,11 +159,9 @@ h1 { /*generel h1 formatering*/
 	from {left: -1700px;}
 	to{left: 0px;}
 }
-
 #titleText:hover {
 	color: #fff;
 }
-
 #creditButton { /*credits button fra startskjermen*/
 	position: relative;
 	width: 200px;
@@ -312,12 +308,15 @@ h1 { /*generel h1 formatering*/
 	background-repeat: no-repeat;
 }
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
-	position: relative;
+	position: absolute;
 	width: 900px;
 	height: 160px;
 	margin: 0px auto;
 	border: #3f3 1px solid;
 	overflow: hidden;
+}
+#banner {
+	left: 230px;
 }
 div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og animert*/ 
 	position: relative;
@@ -373,7 +372,7 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 	top: 30%;
 }
 div.snakkeBobble p {
-	top: -20px; 
+	top: 10%; 
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
 	background-color: black;
@@ -383,7 +382,7 @@ div.snakkeBobble p {
 	top: -900px;
 	text-align: center;
 	margin: auto;
-	-webkit-animation: fadeOverlay 2.5s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
+	-webkit-animation: fadeOverlay 3s linear 10s 1 forwards; /*Remeber to change back to 10 sec delay*/
 }
 #textPosFix {
 	top: -1000px;
@@ -392,10 +391,10 @@ div.snakkeBobble p {
 	top: -750px;
 }
 
-@-webkit-keyframes fadeOverlay {
+@-webkit-keyframes fadeOverlay { /*Fadein på nesten alle sener*/
 	0% {opacity: 1; height:  900px;}
 	99% {opacity: 0; height: 900px;}
-	100% {height: 0px; opacity: 0;	}
+	100% {height: 0px; opacity: 0;	} /*enret til 0 heigth for å ikke se rar ut på siden*/
 }
 .snakkeBobble { /*Snakkebobble for dialogene*/
 	background-color: white;
@@ -411,7 +410,7 @@ div.snakkeBobble p {
 	-webkit-animation: fadeIn 3s linear 12s 1 forwards;
 	-webkit-transition: all 2s ease;
 }
-#snakkeBobbleSene1 {
+#snakkeBobbleSene1 { /*forskellige snakkebobble posisjoner*/
 	top: -700px;
 	left: 0px;
 }
@@ -462,6 +461,7 @@ div.snakkeBobble > p {
 	50% {opacity: 0;}
 	100% {left: 228px; opacity: 1;}
 }
+/*Karakterer formartert med høyde/bredde og posisjon*/
 #heisenberg {
 	width: 240px;
  	top: 125px;
@@ -503,6 +503,7 @@ div.snakkeBobble > p {
 }
 #listog-farger2 {
 	width: 300px;
+	top: 200px;
 	position: relative;
 	left: -200px;
 }
@@ -545,7 +546,6 @@ div.snakkeBobble > p {
 	position: relative;
 	left: 50px;
 }
-
 #zombie{
 	position: relative;
 	-webkit-animation: walk 5s linear 0s infinite alternate;
@@ -596,7 +596,7 @@ div.snakkeBobble > p {
 		transform: rotate(15deg);
 	}	
 }
-
+ /*nav animasjon*/
  #ingrediens1{
 	font-size:40px;
 	position:relative;
@@ -700,36 +700,27 @@ div.snakkeBobble > p {
 }
 
 @-webkit-keyframes BokstaveneFallerPaaPlass3{
-	0%{
-		transform:scale(1);
-
-	}
+	0%{transform:scale(1);}
 
 	50%{
 		color:red;
 		left:0px;
 		top:0px;
 		transform:scale(1);
-
 	}
-
 	80%{
 		transform:scale(1);
 		left:190px;
 		top:110px;
 		color:red;
-
 	}
-
 	100%{
 		left:190px;
 		top:110px;
 		color:red;
 		transform:scale(2);
-
 	}
 }
-
 #aapenbaring{
 	opacity:0;
 	height:30px;
@@ -739,14 +730,8 @@ div.snakkeBobble > p {
 	display:block;
 	-webkit-animation: aapenbaringenViserSeg 3s linear 20s forwards;
 }
-
 @-webkit-keyframes aapenbaringenViserSeg{
-	0%{
-		opacity:0;
-	}
-
-	100%{
-		opacity:1;
-	}
+	0%{opacity:0;}
+	100%{opacity:1;}
 }
 
