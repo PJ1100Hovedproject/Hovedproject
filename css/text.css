@@ -436,7 +436,7 @@ div.snakkeBobble p {
 	transform: scale(1.2);
 }
 #snakkeBobbleFjord {
-	height: 110px;
+	height: 130px;
 	top: -690px;
 }
 .animasjonsWrap:hover ~ #snakkeBobbleFjord{
