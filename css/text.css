@@ -105,7 +105,7 @@ body { /* margin remove and background color*/
 }
 #tilbakeFeilSvar {
 	left: -380px;
-	top: 546px;
+	top: 380px;
 }
 .question { /*der spørsmålet til listogs kontor kommer opp*/
 	height: 80px;
@@ -311,13 +311,9 @@ h1 { /*generel h1 formatering*/
 	background-image: url("../bilder/Bakgrunner/tekniskMuseumBakgrunn.jpg");
 	cursor: crosshair;
 }
-#startscreen{
-	background-image: url("../bilder/karakterer/arne_boms-farger.png");
-	background-repeat: no-repeat;
-	top:50px;
-}
+
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
-	position: absolute;
+	position: relative;
 	width: 900px;
 	height: 160px;
 	margin: 0px auto;
@@ -325,7 +321,7 @@ h1 { /*generel h1 formatering*/
 	overflow: hidden;
 }
 #banner {
-	left: 230px;
+	left: 0px;
 }
 div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og animert*/ 
 	position: relative;
@@ -347,6 +343,7 @@ div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og anim
 div#bannerZombie{ /*Posisijonene til Zombie banneret*/ 
 	left: -150px;
 	top: -500px;
+	position: absolute;
 	-webkit-animation: topToBottom 5s ease 10s 1 forwards;
 }
 div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir puttet in og animert til Zombie banneret*/ 
@@ -493,6 +490,12 @@ div.snakkeBobble > p {
  	top: 555px;
  	left: -250px;
 }
+#bomsStart {
+	width: 200px;
+	top: 100px;
+	left: 50px;
+	position: relative;
+}
 #boms {
 	position: relative;
 	top: 170px;
@@ -512,9 +515,9 @@ div.snakkeBobble > p {
 }
 #listog-farger2 {
 	width: 300px;
-	top: 200px;
+	top: 00px;
 	position: relative;
-	left: -200px;
+	left: -240px;
 }
 #bomsFjord {
 	width: 100px;
