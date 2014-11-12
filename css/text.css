@@ -170,14 +170,17 @@ h1 { /*generel h1 formatering*/
     top: 600px;
     opacity: 0;
 	left: 760px;
-	background-color: #af3333;
+	border: 2px;
+	border-radius:10px;
+	border-color:black;
+	border-style:solid;
+	background-color: #FFFFFF;
 	font-size: 1.4em;
 	-webkit-animation: popUp 0.3s linear 5s 1 forwards;
 	-webkit-transition: all .1s linear;
 }
 #creditButton:hover {
-	color: #F00;
-	background-color: #000;
+	background-color: #9E1010;
 }
 .credits {
 	width: 600px;
@@ -246,7 +249,11 @@ h1 { /*generel h1 formatering*/
 	width: 400px;
 	height: 80px;
 	margin: auto;
-	background-color: yellow;
+	border: 2px;
+	border-radius:10px;
+	border-color:black;
+	border-style:solid;
+	background-color: #FFFFFF;
 	-webkit-animation: moveIn 5s ease 1 forwards;
 	-webkit-transition-property: all;
     -webkit-transition-duration: .5s;
@@ -259,7 +266,7 @@ h1 { /*generel h1 formatering*/
 	to{left: 300px; top: 300px;}
 	}
 .animasjonsWrap:hover a #startButton { /*Når man hovrer over blir den litt større og får en annen farge*/
-	background-color: #0f0;
+	background-color: #9E1010;
 	transform: scale(2) rotate(1080deg);
 	border-radius: 20%;
 }
@@ -305,8 +312,9 @@ h1 { /*generel h1 formatering*/
 	cursor: crosshair;
 }
 #startscreen{
-	background-image: url("../bilder/karakterer/startscreen-karakterer.png");
+	background-image: url("../bilder/karakterer/arne_boms-farger.png");
 	background-repeat: no-repeat;
+	top:50px;
 }
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
 	position: absolute;
