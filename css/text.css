@@ -532,6 +532,10 @@ div.snakkeBobble > p {
 	98% {left: 120px; top: 390px;}
 	100% {left: 100px; top: 500px; transform: rotate(60deg); opacity: 0;}
 }
+#politibetjent {
+	width: 200px;
+	top: 300px;
+}
 #mrL {
 	width: 200px;
 	top: 180px;
