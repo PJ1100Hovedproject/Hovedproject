@@ -372,7 +372,7 @@ div.textDialog p{  /*generell format for alle p dialog tekster*/
 	top: 30%;
 }
 div.snakkeBobble p {
-	top: -20px; 
+	top: 10%; 
 }
 .textDialog { /*dialog boksen under animasjons wrapen*/
 	background-color: black;
