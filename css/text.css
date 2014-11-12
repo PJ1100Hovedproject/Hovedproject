@@ -230,7 +230,11 @@ h1 { /*generel h1 formatering*/
 #gameover { /*game over knapp*/
 	height: 100px;
 	width: 500px;
-	background-color: #bbb;
+	border: 2px;
+	border-radius:10px;
+	border-color:black;
+	border-style:solid;
+	background-color: #FFFFFF;
 	font-size: 3em;
 	margin: auto;
 	top: 500px;
@@ -239,6 +243,7 @@ h1 { /*generel h1 formatering*/
 }
 #gameover:hover { /*Game over knapp hover effekter*/
 	-webkit-animation: pulse .5s linear infinite alternate;
+	background-color:red;
 }
 @-webkit-keyframes pulse {
 	0% {transform: scale(1);}
