@@ -122,7 +122,7 @@ body { /* margin remove and background color*/
 div { /*sørger for at alle diver har samme font og er sentrert med en passe størrelse*/
 	font-family: Georgia, Arial, Verdana;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 #blackbox { /*Blackbox under for å skjule lenkene som har pos abs*/
 	height: 100px;
