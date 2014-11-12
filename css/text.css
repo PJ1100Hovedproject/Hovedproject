@@ -348,7 +348,7 @@ div#bannerZombie{ /*Posisijonene til Zombie banneret*/
 	left: -150px;
 	top: -500px;
 	position: absolute;
-	-webkit-animation: topToBottom 5s ease 10s 1 forwards;
+	-webkit-animation: topToBottom 5s ease 15s 1 forwards;
 }
 div#bannerZombie > #bannerBackgroundZombie { /*Dette er selve bilde som blir puttet in og animert til Zombie banneret*/ 
 	background-image: url(../bilder/objects/zombie.jpg);
@@ -399,6 +399,9 @@ div.snakkeBobble p {
 }
 #textPosFixMotgift {
 	top: -750px;
+}
+#textPosFixDead {
+	top: -900px;
 }
 
 @-webkit-keyframes fadeOverlay { /*Fadein på nesten alle sener*/
