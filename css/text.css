@@ -105,7 +105,7 @@ body { /* margin remove and background color*/
 }
 #tilbakeFeilSvar {
 	left: -380px;
-	top: 380px;
+	top: 546px;
 }
 .question { /*der spørsmålet til listogs kontor kommer opp*/
 	height: 80px;
@@ -308,12 +308,15 @@ h1 { /*generel h1 formatering*/
 	background-repeat: no-repeat;
 }
 .bannerClass {   /*Dette er klassen til banneret som har en scrolling bakgrunnsbilde alt som de har til felles kodes her*/
-	position: relative;
+	position: absolute;
 	width: 900px;
 	height: 160px;
 	margin: 0px auto;
 	border: #3f3 1px solid;
 	overflow: hidden;
+}
+#banner {
+	left: 230px;
 }
 div#banner > #bannerBackdrop { /*Dette er selve bilde som blir puttet in og animert*/ 
 	position: relative;
@@ -500,6 +503,7 @@ div.snakkeBobble > p {
 }
 #listog-farger2 {
 	width: 300px;
+	top: 200px;
 	position: relative;
 	left: -200px;
 }
@@ -697,7 +701,7 @@ div.snakkeBobble > p {
 
 @-webkit-keyframes BokstaveneFallerPaaPlass3{
 	0%{transform:scale(1);}
-	
+
 	50%{
 		color:red;
 		left:0px;
